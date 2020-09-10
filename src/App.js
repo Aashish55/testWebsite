@@ -1,13 +1,26 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import styled from 'styled-components';
+
+import AboutMe from "./Components/AboutMe/AboutMe";
+import Details from "./Components/Details/Details";
+import NavigationBar from "./Components/NavigationBar/NavigationBar";
+
+const Container = styled.div`
+  display:flex;
+  align-items:center;
+`;
 
 class App extends Component {
-  state = {  }
-  render() { 
+  state = {};
+  render() {
     return (
-      <div>
-      </div>
+      <Container>
+        <AboutMe />
+        <Details />
+        <NavigationBar />
+      </Container>
     );
   }
 }
- 
+
 export default App;
