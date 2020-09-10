@@ -5,15 +5,15 @@ import CVbackground from '../../images/CVbackground.jpg';
 
 const Container = styled.div`
     background-color:#f8f8f8;
-    height:95vh;
+    height:100vh;
     width:43rem;
     padding:2rem 2rem;
-
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
-    overflow:auto;
+    position:fixed;
+    z-index:10;
 `;
 const Image = styled.div`
     height:28rem;
@@ -68,7 +68,7 @@ const CVDownloadSection = styled.div`
 `;
 const DownloadResumeText = styled.div`
     color: #242221;
-    font-size:3rem;
+    font-size:3.5rem;
     font-weight:600;
 `;
 const DownloadButton = styled.button`
