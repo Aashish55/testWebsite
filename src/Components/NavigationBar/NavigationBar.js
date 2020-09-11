@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
-import { FaHome } from "react-icons/fa";
 import { FaChartBar } from "react-icons/fa";
 import { FaServicestack } from "react-icons/fa";
 import { FaTasks } from "react-icons/fa";
@@ -46,11 +45,21 @@ const NavItemsArea = styled.div`
 
 class NavigationBar extends Component {
   state = {
-    active: 'home'
+    active: 'skills'
   };
 
   navigationHandler = item => {
-    this.setState({active:item})
+    if(item==='skills'){
+      this.setState({active:'skills'});
+    }else if(item==='services'){
+      this.setState({active:'services'});
+    }else if(item==='works'){
+      this.setState({active:'works'});
+    }else if(item==='team'){
+      this.setState({active:'team'});
+    }else if(item==='contact'){
+      this.setState({active:'contact'});
+    }
     console.log(this.state.active);
   };
 
@@ -63,23 +72,20 @@ class NavigationBar extends Component {
             className: "icons",
           }}
         >
-          <NavItemsArea key={1} onClick={()=>this.navigationHandler('home')}>
-            <FaHome />
+          <NavItemsArea >
+            <FaChartBar onClick={()=>this.navigationHandler('skills')}/>
           </NavItemsArea>
-          <NavItemsArea key={2} onClick={()=>this.navigationHandler('skills')}>
-            <FaChartBar />
+          <NavItemsArea >
+            <FaServicestack onClick={()=>this.navigationHandler('services')}/>
           </NavItemsArea>
-          <NavItemsArea key={3} onClick={()=>this.navigationHandler('services')}>
-            <FaServicestack />
+          <NavItemsArea >
+            <FaTasks onClick={()=>this.navigationHandler('works')}/>
           </NavItemsArea>
-          <NavItemsArea key={4} onClick={()=>this.navigationHandler('works')}>
-            <FaTasks />
+          <NavItemsArea >
+            <FaUsers onClick={()=>this.navigationHandler('team')}/>
           </NavItemsArea>
-          <NavItemsArea key={5} onClick={()=>this.navigationHandler('team')}>
-            <FaUsers />
-          </NavItemsArea>
-          <NavItemsArea key={6} onClick={()=>this.navigationHandler('contact')}>
-            <FaPhone />
+          <NavItemsArea >
+            <FaPhone onClick={()=>this.navigationHandler('contact')}/>
           </NavItemsArea>
         </IconContext.Provider>
       </NavBar>
