@@ -5,7 +5,7 @@ import SubtitleText from "../../UI/SubtitleText";
 
 const SkillsSection = styled.div`
   width: 100%;
-  height: 30rem;
+  margin-bottom:5rem;
 `;
 const Container = styled.div`
   display: flex;
@@ -16,6 +16,18 @@ const TwoSectionRow = styled.div`
 `;
 const ThreeSectionColumn = styled.div`
   margin-bottom: 0.5rem;
+`;
+const SkillBox = styled.div`
+    width: 100%;
+    height:.8rem;
+    border-radius:1rem;
+    background-color: #f8f8f8;
+`;
+const Skill = styled.div`
+    height:100%;
+    width:${props => props.value}%;
+    background-color:${props => props.color};
+    border-radius:1rem;
 `;
 
 class Skills extends Component {
@@ -28,23 +40,41 @@ class Skills extends Component {
           <TwoSectionRow>
             <ThreeSectionColumn>
               <SubtitleText text={"React.js"} />
+              <SkillBox>
+                <Skill  value={'70'} color={'#fdd3d6'}/>
+              </SkillBox>
             </ThreeSectionColumn>
             <ThreeSectionColumn>
               <SubtitleText text={"Node.js"} />
+              <SkillBox>
+                <Skill value={'50'} color={'#aae5e5'}/>
+              </SkillBox>
             </ThreeSectionColumn>
             <ThreeSectionColumn>
-              <SubtitleText text={"React"} />
+              <SubtitleText text={"Firebase"} />
+              <SkillBox>
+                <Skill value={'55'} color={'#fdd3d6'}/>
+              </SkillBox>
             </ThreeSectionColumn>
           </TwoSectionRow>
           <TwoSectionRow>
             <ThreeSectionColumn>
-              <SubtitleText text={"React.js"} />
+              <SubtitleText text={"Dart"} />
+              <SkillBox>
+                <Skill value={'75'} color={'#aae5e5'}/>
+              </SkillBox>
             </ThreeSectionColumn>
             <ThreeSectionColumn>
-              <SubtitleText text={"Node.js"} />
+              <SubtitleText text={"Unity"} />
+              <SkillBox>
+                <Skill value={'85'} color={'#fdd3d6'}/>
+              </SkillBox>
             </ThreeSectionColumn>
             <ThreeSectionColumn>
-              <SubtitleText text={"React"} />
+              <SubtitleText text={"C#"} />
+              <SkillBox>
+                <Skill value={'80'} color={'#aae5e5'}/>
+              </SkillBox>
             </ThreeSectionColumn>
           </TwoSectionRow>
         </Container>
