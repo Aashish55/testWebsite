@@ -13,6 +13,8 @@ const Container = styled.div`
     align-items:center;
     justify-content:space-between;
     position:fixed;
+    left:0;
+    top:0;
     z-index:10;
     overflow:auto;
 `;

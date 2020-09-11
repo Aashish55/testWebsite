@@ -7,8 +7,9 @@ import MyTeam from './MyTeam/MyTeam';
 import Contact from './Contact/Contact';
 
 const DetailsSection = styled.div`
-    margin:0 15rem 0 47rem;
-    flex:1;    
+    position:relative;
+    margin:1rem 15rem 0 47rem;
+    flex:1;  
 `;
 
 
