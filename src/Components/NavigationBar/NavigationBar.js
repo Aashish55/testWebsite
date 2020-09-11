@@ -39,7 +39,7 @@ const NavItemsArea = styled.div`
 
   &:hover {
     background-color: #9174d8;
-    color: white;
+    color: #f8f8f8;
   }
 `;
 
