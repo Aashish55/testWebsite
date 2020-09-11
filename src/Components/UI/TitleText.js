@@ -6,12 +6,17 @@ const Text = styled.h2`
     font-size:3rem;
     font-weight:600;
     margin-bottom:1rem;
+
+    &:first-letter{
+        color:#9174d8;
+        font-size:4rem;
+    }
 `;
 
 const TitleText = props => {
     return (
         <Text>
-            {props.text}
+            | {props.text}
         </Text>
     );
 }

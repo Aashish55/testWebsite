@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TitleText from "../../UI/TitleText";
 import styled from "styled-components";
+import { keyframes } from 'styled-components'
 import SubtitleText from "../../UI/SubtitleText";
 
 const SkillsSection = styled.div`
@@ -28,6 +29,16 @@ const Skill = styled.div`
     width:${props => props.value}%;
     background-color:${props => props.color};
     border-radius:1rem;
+    animation: ${props => increaseAnimation(props.value)};
+    animation-duration: 3s;
+`;
+const increaseAnimation= x => keyframes`
+    0%{
+        width:0;
+    }
+    100%{
+        width:${x}%;
+    }
 `;
 
 class Skills extends Component {
