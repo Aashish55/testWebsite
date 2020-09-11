@@ -5,7 +5,7 @@ const Text = styled.h2`
     color: #242221;
     font-size:3rem;
     font-weight:600;
-    margin-bottom:1rem;
+    margin-bottom:2rem;
 
     &:first-letter{
         color:#9174d8;

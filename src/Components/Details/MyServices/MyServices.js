@@ -5,7 +5,7 @@ import ServiceCard from '../../UI/ServiceCard';
 
 const MyServicesSection = styled.div`
     width:100%;
-    height:30rem;
+    margin-bottom:5rem;
 `;
 const ServiceCardContainer = styled.div`
     display:flex;
@@ -20,7 +20,7 @@ class MyServices extends Component {
             <MyServicesSection>
                 <TitleText text={'My Services'} />
                 <ServiceCardContainer>
-                    <ServiceCard name={'web'} title={'Web Development'} description={'I believe in minimum lines of code with highly optimized sites.'}/>
+                    <ServiceCard name={'web'} title={'Web Development'} description={'I believe in minimum lines of code with highly optimized responsive sites.'}/>
                     <ServiceCard name={'app'} title={'Android Development'} description={'Optimized android apps with cool UI designs and great animations.'} />
                     <ServiceCard name={'game'} title={'Game Development'} description={'Going for 3D game developmet after working enough in 2D games.'} />
                 </ServiceCardContainer>
