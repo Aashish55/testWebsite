@@ -4,13 +4,18 @@ import { GiGamepad } from "react-icons/gi";
 import { FaCode } from "react-icons/fa";
 import { FaAndroid } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import Subtitle from './SubtitleText';
 
 const Card = styled.div`
   background-color: #f8f8f8;
-  width: 32%;
+  padding:1rem;
+  width: 30%;
   height: 20rem;
   border-radius: 1rem;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
 `;
 const ServiceTitle = styled.h2`
     color: #242221;
@@ -18,14 +23,20 @@ const ServiceTitle = styled.h2`
     font-weight:600;
     margin-bottom:.5rem;
 `;
+const Description = styled.p`
+    color: #242221;
+    font-size:1.8rem;
+    margin-bottom:.2rem;
+    text-align:center;
+`;
 
 const ServiceCard = (props) => {
   return (
     <Card>
       <IconContext.Provider
         value={{
-          color: "#aae5e5",
-          size: "3rem",
+          color: "#242221",
+          size: "4rem",
           className: "icons",
         }}
       >
@@ -38,7 +49,7 @@ const ServiceCard = (props) => {
         )}
       </IconContext.Provider>
       <ServiceTitle>{props.title}</ServiceTitle>
-      <Subtitle>{props.description}</Subtitle>
+      <Description>{props.description}</Description>
     </Card>
   );
 };

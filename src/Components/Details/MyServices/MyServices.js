@@ -20,9 +20,9 @@ class MyServices extends Component {
             <MyServicesSection>
                 <TitleText text={'My Services'} />
                 <ServiceCardContainer>
-                    <ServiceCard />
-                    <ServiceCard />
-                    <ServiceCard />
+                    <ServiceCard name={'web'} title={'Web Development'} description={'I believe in minimum lines of code with highly optimized sites.'}/>
+                    <ServiceCard name={'app'} title={'Android Development'} description={'Optimized android apps with cool UI designs and great animations.'} />
+                    <ServiceCard name={'game'} title={'Game Development'} description={'Going for 3D game developmet after working enough in 2D games.'} />
                 </ServiceCardContainer>
             </MyServicesSection>
         );

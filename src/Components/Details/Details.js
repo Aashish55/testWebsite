@@ -8,7 +8,7 @@ import Contact from './Contact/Contact';
 
 const DetailsSection = styled.div`
     position:relative;
-    margin:1rem 15rem 0 47rem;
+    margin:1rem 13rem 0 47rem;
     flex:1;  
 `;
 
