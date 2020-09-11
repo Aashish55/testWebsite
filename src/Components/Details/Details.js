@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const DetailsSection = styled.div`
-    margin:0 15rem 0 50rem;
+    margin:0 15rem 0 45rem;
     flex:1;    
 `;
 

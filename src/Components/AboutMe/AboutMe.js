@@ -5,8 +5,8 @@ import CVbackground from '../../images/CVbackground.jpg';
 
 const Container = styled.div`
     background-color:#f8f8f8;
-    height:100vh;
-    width:43rem;
+    height:95vh;
+    width:40rem;
     padding:2rem 2rem;
     display:flex;
     flex-direction:column;
@@ -14,6 +14,7 @@ const Container = styled.div`
     justify-content:space-between;
     position:fixed;
     z-index:10;
+    overflow:auto;
 `;
 const Image = styled.div`
     height:28rem;
@@ -93,7 +94,7 @@ class AboutMe extends Component {
                     <Surname>Jangam</Surname>
                 </NameSection>
                 <DetailSection>
-                I am a web developer, android developer and professional game developer from Kavrepalanchok Nepal. I enjoy turning complex problems into simple, beautiful and intuitive interface designs and scenes.
+                I am a web developer, android developer and professional game developer from Kavrepalanchok Nepal. I enjoy turning complex problems into simple, beautiful game scenes and intuitive interface designs.
                 </DetailSection>
                 <CVDownloadSection image={CVbackground}>
                     <DownloadResumeText>
