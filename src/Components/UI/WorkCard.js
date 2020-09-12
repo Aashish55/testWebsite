@@ -21,7 +21,21 @@ const Card = styled.div`
 const WorkCard = props => {
     return (
         <Card>
-            
+            <div>
+                icon
+            </div>
+            <div>
+                name
+            </div>
+            <div>
+                developers
+            </div>
+            <div>
+                status
+            </div>
+            <div>
+                options
+            </div>
         </Card>
     );
 }

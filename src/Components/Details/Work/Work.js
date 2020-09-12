@@ -21,7 +21,7 @@ class Work extends Component {
                 <TitleText text={'Projects'} />
                 <WorkCardsSection>
                     <WorkCard/>
-                    <WorkCard/>
+                    
                 </WorkCardsSection>
            </WorkSection>
         );
